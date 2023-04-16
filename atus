@@ -1,0 +1,23 @@
+[33mcommit 4552eb711ebdb7a387c6f223026fcf02c222cb3c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Andrea Balduzzi <you@example.com>
+Date:   Sun Apr 16 16:39:30 2023 -0300
+
+    commit 1
+
+[33mcommit e0d842a135b9e3c018752b884a69d82c210a7cdd[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: lidiagdk <ldabbraccio>
+Date:   Sat Apr 15 22:18:16 2023 -0300
+
+    enlaces
+
+[33mcommit e1364338726875e928a66c02d0d191695d5bcff0[m
+Author: lidiagdk <ldabbraccio>
+Date:   Sat Apr 15 20:18:21 2023 -0300
+
+    estilos home
+
+[33mcommit 81b5a05e3d36e5991389665a9f0d459d165dcafc[m
+Author: lidiagdk <ldabbraccio@gmail.com>
+Date:   Thu Apr 13 18:24:42 2023 -0300
+
+    armado flexbox
