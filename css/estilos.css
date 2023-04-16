@@ -213,8 +213,12 @@ h2 {
 }
 
 .footer {
-
-    background: #000;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    background: gray;
     display: flex;
     justify-content: center;
 }
