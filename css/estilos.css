@@ -191,6 +191,7 @@ h2 {
 }
 
 .aside {
+    margin: auto;
     background: hotpink;
     flex:auto;
     
@@ -211,17 +212,25 @@ h2 {
     padding: 0px 0 10px 0;
     color: beige;
 }
+h6 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 0;
+    color: aquamarine;
+}
 
 
 .publicidad {
+    margin: auto;
     background: rgb(206, 223, 109);
 }
 
 .footer {
+    bottom: 0;
     background-position: center;
     background-attachment: contain;
-    background-size:100%;
-    width: 100%;
+    background: size 9px;0%;
+    width: 90%;
     display: flex;
     flex-flow: column nowrap;
     background: gray;
