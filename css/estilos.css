@@ -195,6 +195,7 @@ h2 {
 }
 
 .aside {
+<<<<<<< HEAD
     
    
    
@@ -207,6 +208,11 @@ h2 {
     
     
 
+=======
+    margin: auto;
+    background: hotpink;
+    flex:auto;
+>>>>>>> 457b168daf2e19cf998605d7a53f008e87b50eaa
     
 }
 
@@ -246,18 +252,26 @@ h2 {
     padding: 0px 0 10px 0;
     color: beige;
 }
+h6 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 0;
+    color: aquamarine;
+}
 
 
 .publicidad {
+    margin: auto;
     background: rgb(206, 223, 109);
 }
 >>>>>>> refs/remotes/origin/main
 
 .footer {
+    bottom: 0;
     background-position: center;
     background-attachment: contain;
-    background-size:100%;
-    width: 100%;
+    background: size 9px;0%;
+    width: 90%;
     display: flex;
     flex-flow: column nowrap;
     background: gray;
