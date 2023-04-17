@@ -195,26 +195,14 @@ h2 {
 }
 
 .aside {
-<<<<<<< HEAD
-    
-   
-   
     border-top: azure;
     background: #f7f4f4;
     letter-spacing: 1px;
     margin: 10px 0px 0 0px;
     flex: 1 1 50%;
     
-    
-    
-
-=======
-    margin: auto;
-    background: hotpink;
-    flex:auto;
->>>>>>> 457b168daf2e19cf998605d7a53f008e87b50eaa
-    
 }
+    
 
 .aside img {
     width: 100%;
@@ -227,7 +215,7 @@ h2 {
    
     
     }
-<<<<<<< HEAD
+
 
    
     h4{
@@ -239,7 +227,7 @@ h2 {
     .publicidad {
         background: rgb(206, 223, 109);
     }
-=======
+
  h4{
     background: #000;
     color:#fff;
@@ -264,7 +252,7 @@ h6 {
     margin: auto;
     background: rgb(206, 223, 109);
 }
->>>>>>> refs/remotes/origin/main
+
 
 .footer {
     bottom: 0;
