@@ -190,27 +190,36 @@ h2 {
     flex: 1 1 100%;
 }
 
+.navegacion a{
+    
+}
+
 .aside {
-    background: hotpink;
-    flex:auto;
+    
+    flex:1 1 auto;
+    
+
     
 }
 
 .aside img {
     width: 100%;
+    position:relative;
+  
+   
+    
     }
- h4{
-    background: #000;
-    color:#fff;
-    padding: 10px;
-    text-transform: uppercase;
- }   
 
-
-
-.publicidad {
-    background: rgb(206, 223, 109);
-}
+   
+    h4{
+        background: #000;
+        color:#fff;
+        padding: 10px;
+        text-transform: uppercase;
+     }   
+    .publicidad {
+        background: rgb(206, 223, 109);
+    }
 
 .footer {
 
@@ -238,11 +247,7 @@ h2 {
         height: auto;
     }
 
-    .aside {
-        display: flex;
-        justify-content: center;
-    }
-
+   
 }
 
 @media all and (max-width: 600px) {
