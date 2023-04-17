@@ -209,6 +209,7 @@ h2 {
    
     
     }
+<<<<<<< HEAD
 
    
     h4{
@@ -220,17 +221,41 @@ h2 {
     .publicidad {
         background: rgb(206, 223, 109);
     }
+=======
+ h4{
+    background: #000;
+    color:#fff;
+    padding: 10px;
+    text-transform: uppercase;
+ }   
+ h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0px 0 10px 0;
+    color: beige;
+}
+
+
+.publicidad {
+    background: rgb(206, 223, 109);
+}
+>>>>>>> refs/remotes/origin/main
 
 .footer {
-
-    background: #000;
+    background-position: center;
+    background-attachment: contain;
+    background-size:100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background: gray;
     display: flex;
     justify-content: center;
 }
 
 .pie {
     background: rgb(133, 133, 88);
-    width: 300px;
+    width: 100%;
 }
 
 .desplegable {
@@ -260,4 +285,30 @@ h2 {
     .aside {
         flex-direction: column;
     }
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .telef {
+    background-color: rgb(204, 49, 49);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
 }
