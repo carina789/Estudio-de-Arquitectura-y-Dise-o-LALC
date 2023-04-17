@@ -196,7 +196,15 @@ h2 {
 
 .aside {
     
-    flex:1 1 auto;
+   
+   
+    border-top: azure;
+    background: #f7f4f4;
+    letter-spacing: 1px;
+    margin: 10px 0px 0 0px;
+    flex: 1 1 50%;
+    
+    
     
 
     
@@ -204,7 +212,11 @@ h2 {
 
 .aside img {
     width: 100%;
-    position:relative;
+    object-fit: cover;
+   
+    
+    
+
   
    
     
