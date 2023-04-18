@@ -186,7 +186,7 @@ h2 {
 
 
 .navegacion {
-    background: #74b1da;
+    background: #021726;
     flex: 1 1 100%;
 }
 
@@ -208,13 +208,7 @@ h2 {
     width: 100%;
     object-fit: cover;
    
-    
-    
-
-  
-   
-    
-    }
+ }
 
 
    
@@ -258,7 +252,7 @@ h6 {
     bottom: 0;
     background-position: center;
     background-attachment: contain;
-    background: size 9px;0%;
+    background: size 9px;
     width: 90%;
     display: flex;
     flex-flow: column nowrap;
