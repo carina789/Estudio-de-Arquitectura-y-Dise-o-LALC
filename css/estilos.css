@@ -186,19 +186,42 @@ h2 {
 
 
 .navegacion {
-    background: #74b1da;
+    background: #021726;
     flex: 1 1 100%;
 }
 
-.aside {
-    background: hotpink;
-    flex:auto;
+.navegacion a{
     
 }
 
+.aside {
+    border-top: azure;
+    background: #f7f4f4;
+    letter-spacing: 1px;
+    margin: 10px 0px 0 0px;
+    flex: 1 1 50%;
+    
+}
+    
+
 .aside img {
     width: 100%;
+    object-fit: cover;
+   
+ }
+
+
+   
+    h4{
+        background: #000;
+        color:#fff;
+        padding: 10px;
+        text-transform: uppercase;
+     }   
+    .publicidad {
+        background: rgb(206, 223, 109);
     }
+
  h4{
     background: #000;
     color:#fff;
@@ -211,17 +234,26 @@ h2 {
     padding: 0px 0 10px 0;
     color: beige;
 }
+h6 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 0;
+    color: aquamarine;
+}
 
 
 .publicidad {
+    margin: auto;
     background: rgb(206, 223, 109);
 }
 
+
 .footer {
+    bottom: 0;
     background-position: center;
     background-attachment: contain;
-    background-size:100%;
-    width: 100%;
+    background: size 9px;
+    width: 90%;
     display: flex;
     flex-flow: column nowrap;
     background: gray;
@@ -248,11 +280,7 @@ h2 {
         height: auto;
     }
 
-    .aside {
-        display: flex;
-        justify-content: center;
-    }
-
+   
 }
 
 @media all and (max-width: 600px) {
