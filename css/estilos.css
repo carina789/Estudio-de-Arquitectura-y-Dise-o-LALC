@@ -140,7 +140,7 @@ nav ul li {
     letter-spacing: 1px;
     margin: 10px 10px 0 0px;
     flex: 1 1 45%;
-    background: #918a8acc;
+    background: #e4ddbbcc;
 }
 
 .article img {
@@ -158,7 +158,7 @@ nav ul li {
 }
 
 .article a:hover {
-    background: darkslategrey;
+    background: rgb(71, 195, 195);
 
 }
 
@@ -570,21 +570,6 @@ footer {
 /*A partir de aqui comienza estilos de la pagina proyectos*/
 
 
-
-
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-
-}
-
-body {
-    font-family: sans-serif;
-}
-
 a {
     text-decoration: none;
 }
@@ -677,51 +662,203 @@ nav ul li {
     font-family: Arial Narrow;
 }*/
 
-
-
-/*estilos de prueba*/
-
-h1{
-    
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.position {
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #4d555a;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left:50%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }
 
-.slider {
-    background-image: url(css\images\alev-takil-8JSFzfj6mF0-unsplash.jpg);
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
     background-size: cover;
-    height: 50%;
-    width: 50%;
-    border-radius: 10px;
-    animation: animate 10s infinite;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
 }
 
-@keyframes animate {
-    20%{
-        background-image:url(css\images\15-ejemplos-de-publicidad-impresa-5.jpg.webp);
-        background-size: cover;
-    }
-    40%{
-        background-image:url(css\images\sung-jin-cho-BbVGAjfAQ4o-unsplash.jpg);
-        background-size: cover;
-    }
-    60%{
-        background-image:url(css\images\webaliser-_TPTXZd9mOo-unsplash.jpg);
-        background-size: cover;
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
     }
 
-    80%{
-        background-image:url(css\images\sung-jin-cho-BbVGAjfAQ4o-unsplash.jpg);
-        background-size: cover;
+    .menu {
+        flex-direction: column;
+        height: auto;
     }
 
-    100%{
-        background-image:url(css\images\alev-takil-8JSFzfj6mF0-unsplash.jpg);
-        background-size: cover;
-    }
 
 }
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+/*Aqui termina estilos de la pagina proyectos*/
