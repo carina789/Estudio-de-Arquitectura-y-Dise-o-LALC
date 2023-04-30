@@ -1,6 +1,9 @@
+/*Estilos de home*/
+
+
 * {
-    
-    margin:0%;
+
+    margin: 0%;
     padding: 0px;
     box-sizing: border-box;
 
@@ -24,7 +27,6 @@ a {
     margin: 50px;
 }
 
-
 .header {
 
     background: url(../css/images/BBVA-innovacion-construcción-sostenible-apertura.jpg);
@@ -44,8 +46,8 @@ a {
     height: 80px;
     align-items: center;
     border-bottom: 1px solid rgba 255, 255, 255, .5;
-    text-align:center;
-    
+    text-align: center;
+
 
 
 }
@@ -53,19 +55,12 @@ a {
 .logo {
     flex: 1 1 auto;
     font-size: 40px;
-    
-    
-     
-    
-   
 }
 
 .logo p a {
     color: rgb(17, 226, 45);
     font-size: 30px;
     float: none;
-   
-
 }
 
 .logo a:hover {
@@ -82,14 +77,11 @@ a {
     text-transform: uppercase;
     padding: 0 10px;
     letter-spacing: 2px;
-    float:left;
-    
-
-    
+    float: left;
 }
-nav ul li{
+
+nav ul li {
     display: inline;
-   
 }
 
 .nav a:hover {
@@ -154,17 +146,20 @@ nav ul li{
 .article img {
     width: 100%;
 }
-.article a{
-    color:#fff;
-    font: size 10px; ;
+
+.article a {
+    color: #fff;
+    font: size 10px;
+    ;
     padding: 10px;
     background: #000;
-    margin:10 0;
+    margin: 10 0;
     display: inline-block;
 }
+
 .article a:hover {
     background: darkslategrey;
-   
+
 }
 
 
@@ -182,15 +177,9 @@ h2 {
     color: beige;
 }
 
-
-
-.navegacion {
-    background: #021726;
-    flex: 1 1 100%;
-}
-
-.navegacion a{
-    
+p {
+    color: #000;
+    font-family: Arial Narrow;
 }
 
 .aside {
@@ -199,40 +188,39 @@ h2 {
     letter-spacing: 1px;
     margin: 10px 0px 0 0px;
     flex: 1 1 50%;
-    
 }
-    
 
 .aside img {
     width: 100%;
     object-fit: cover;
-   
- }
 
+}
 
-   
-    h4{
-        background: #000;
-        color:#fff;
-        padding: 10px;
-        text-transform: uppercase;
-     }   
-    .publicidad {
-        background: rgb(206, 223, 109);
-    }
-
- h4{
+h4 {
     background: #000;
-    color:#fff;
+    color: #fff;
     padding: 10px;
     text-transform: uppercase;
- }   
- h5 {
+}
+
+.publicidad {
+    background: rgb(206, 223, 109);
+}
+
+h4 {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+h5 {
     font-size: 15px;
     text-transform: uppercase;
     padding: 0px 0 10px 0;
     color: beige;
 }
+
 h6 {
     font-size: 15px;
     text-transform: uppercase;
@@ -240,33 +228,87 @@ h6 {
     color: aquamarine;
 }
 
-
 .publicidad {
     margin: auto;
     background: rgb(206, 223, 109);
 }
 
-
-.footer {
-    bottom: 0;
-    background-position: center;
-    background-attachment: contain;
-    background: size 9px;
-    width: 90%;
-    display: flex;
-    flex-flow: column nowrap;
-    background: gray;
-    display: flex;
-    justify-content: center;
-}
-
-.pie {
-    background: rgb(133, 133, 88);
+footer {
     width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
 }
 
-.desplegable {
-    font-size: 2em;
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 
 @media all and (max-width: 800px) {
@@ -278,8 +320,6 @@ h6 {
         flex-direction: column;
         height: auto;
     }
-
-   
 }
 
 @media all and (max-width: 600px) {
@@ -293,39 +333,13 @@ h6 {
         flex-direction: column;
     }
 }
-.form-signin {
-    max-width: 330px;
-    padding: 15px;
-  }
-  
-  .form-signin .form-floating:focus-within {
-    z-index: 2;
-  }
-  
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  .telef {
-    background-color: rgb(204, 49, 49);
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-}
 
+/*termina estilos de HOME*/
 
+/*A PARTIR DE AQUI COMIENZA ESTILOS DE LA PAGINA "NOSOTROS"*/
 
- /*A PARTIR DE AQUI COMIENZA ESTILOS DE LA PAGINA "NOSOTROS"*/
-
- body#nosotros {
-    background-color: #c8cfcb;
+body#nosotros {
+    background-color: #158847;
 }
 
 * {
@@ -361,6 +375,7 @@ header#nosotros {
     display: flex;
     flex-flow: column nowrap;
 }
+
 .menu {
 
     display: flex;
@@ -371,6 +386,7 @@ header#nosotros {
     border-bottom: 1px solid rgba 255, 255, 255, .5;
     text-align: center;
 }
+
 .logo {
     flex: 1 1 auto;
     font-size: 40px;
@@ -437,4 +453,275 @@ nav ul li {
     text-align: center;
     font-weight: 300;
     line-height: 1.6;
+}
+
+
+
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+
+/*aqui termina estilos de la pagina nosotros*/
+
+
+
+
+/*A partir de aqui comienza estilos de la pagina proyectos*/
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+
+header#proyectos {
+    background: url(../css/images/Blog-IP-Arquitectura-Peru.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+
+    display: flex;
+    background: gray;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid rgba 255, 255, 255, .5;
+    text-align: center;
+}
+
+.logo {
+    flex: 1 1 auto;
+    font-size: 40px;
+}
+
+.logo p a {
+    color: rgb(17, 226, 45);
+    font-size: 30px;
+    float: none;
+}
+
+.logo a:hover {
+    color: black;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: rgb(236, 226, 226);
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.social {
+
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    font-size: 18px;
+    color: rgb(236, 226, 226);
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: black;
+}
+
+/*h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial Narrow;
+}*/
+
+
+
+/*estilos de prueba*/
+
+h1{
+    
+}
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider {
+    background-image: url(css\images\alev-takil-8JSFzfj6mF0-unsplash.jpg);
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate {
+    20%{
+        background-image:url(css\images\15-ejemplos-de-publicidad-impresa-5.jpg.webp);
+        background-size: cover;
+    }
+    40%{
+        background-image:url(css\images\sung-jin-cho-BbVGAjfAQ4o-unsplash.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image:url(css\images\webaliser-_TPTXZd9mOo-unsplash.jpg);
+        background-size: cover;
+    }
+
+    80%{
+        background-image:url(css\images\sung-jin-cho-BbVGAjfAQ4o-unsplash.jpg);
+        background-size: cover;
+    }
+
+    100%{
+        background-image:url(css\images\alev-takil-8JSFzfj6mF0-unsplash.jpg);
+        background-size: cover;
+    }
+
 }
