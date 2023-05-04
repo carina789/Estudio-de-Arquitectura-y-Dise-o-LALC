@@ -1,3 +1,5 @@
+
+
 /*Estilos de home*/
 
 
@@ -7,10 +9,11 @@
     padding: 0px;
     box-sizing: border-box;
 
+
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -58,7 +61,7 @@ a {
 }
 
 .logo p a {
-    color: rgb(17, 226, 45);
+    color: rgb(20, 21, 20);
     font-size: 30px;
     float: none;
 }
@@ -112,7 +115,7 @@ nav ul li {
 }
 
 /* .h1{
-   font-family:Tahoma;
+   
     font-size: 15px;
     color:rgb(236, 226, 226);
     text-align:center;
@@ -121,12 +124,12 @@ nav ul li {
     }*/
 
 .section {
-    background: #fcf7f7;
+    background: #afaaaa;
     display: flex;
 }
 
 .articulos {
-    background: #f7f4f4;
+    background: #afaaaa;
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
@@ -150,7 +153,6 @@ nav ul li {
 .article a {
     color: #fff;
     font: size 10px;
-    ;
     padding: 10px;
     background: #000;
     margin: 10 0;
@@ -179,12 +181,12 @@ h2 {
 
 p {
     color: #000;
-    font-family: Arial Narrow;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .aside {
-    border-top: azure;
-    background: #f7f4f4;
+    border-top: #afaaaa;
+    background: #afaaaa;
     letter-spacing: 1px;
     margin: 10px 0px 0 0px;
     flex: 1 1 50%;
@@ -204,7 +206,7 @@ h4 {
 }
 
 .publicidad {
-    background: rgb(206, 223, 109);
+    background: #d43434;
 }
 
 h4 {
@@ -230,14 +232,13 @@ h6 {
 
 .publicidad {
     margin: auto;
-    background: rgb(206, 223, 109);
+    background: #d43434;
 }
-
 footer {
     width: 100%;
     padding: 50px 0px;
-    background-image: url(../Images/background-footer.svg);
     background-size: cover;
+    
 
     /*background-color: #d0f0f8;
     -webkit-mask-image: url("../Images/background-footer.svg");
@@ -265,7 +266,7 @@ footer {
     width: 180px;
 }
 
-.box__footer .terms {
+.box__footer .tema {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -350,8 +351,9 @@ body#nosotros {
 }
 
 body {
-    font-family: sans-serif;
-}
+      font-family: 'Open Sans', sans-serif;
+    }
+
 
 a {
     text-decoration: none;
@@ -446,18 +448,45 @@ nav ul li {
     align-items: center;
 }
 
-.h1 {
+/*.h1 {
     font-family: Tahoma;
     font-size: 15px;
     color: rgb(236, 226, 226);
     text-align: center;
     font-weight: 300;
     line-height: 1.6;
+}*/
+
+/* *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }*/
+
+.nosotros {
+    font-family: 'open sans';
+}
+
+.nosotros h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea {
+    border-top: 5px solid #4d555a;
+    margin-bottom: 40px;
 }
 
 
+.caja {
+    display: flex;
+}
 
-
+.caja>div {
+    width: 50%;
+    padding: 10px;
+}
 footer {
     width: 100%;
     padding: 50px 0px;
@@ -490,7 +519,7 @@ footer {
     width: 180px;
 }
 
-.box__footer .terms {
+.box__footer .tema {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -536,7 +565,6 @@ footer {
     background-color: #7a7a7a;
 }
 
-
 @media all and (max-width: 800px) {
     .section {
         flex-direction: column;
@@ -569,6 +597,22 @@ footer {
 
 /*A partir de aqui comienza estilos de la pagina proyectos*/
 
+body#proyectos {
+    background-color: #158847;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+        font-family: 'Open Sans', sans-serif;
+      }
+
 
 a {
     text-decoration: none;
@@ -581,6 +625,9 @@ a {
 
 .margen-interno {
     padding: 0 50px;
+}
+a {
+    text-decoration: none;
 }
 
 
@@ -610,7 +657,7 @@ header#proyectos {
 }
 
 .logo p a {
-    color: rgb(17, 226, 45);
+    color: rgb(0, 5, 1);
     font-size: 30px;
     float: none;
 }
@@ -662,101 +709,75 @@ nav ul li {
     font-family: Arial Narrow;
 }*/
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.galeria{
+.galeria {
     font-family: 'open sans';
 }
 
-.galeria h1{
+.galeria h1 {
     text-align: center;
-    margin:20px 0 15px 0;
+    margin: 20px 0 15px 0;
     font-weight: 300;
 }
 
-.linea{
+.linea {
     border-top: 5px solid #4d555a;
     margin-bottom: 40px;
 }
 
-.contenedor-imagenes{
-    display:flex;
+.contenedor-imagenes {
+    display: flex;
     width: 85%;
     margin: auto;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-radius:3px;
+    border-radius: 3px;
 }
 
-.contenedor-imagenes .imagen{
+.contenedor-imagenes .imagen {
     width: 32%;
     position: relative;
-    height:250px;
-    margin-bottom:5px;
+    height: 250px;
+    margin-bottom: 5px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
 }
-.imagen img{
+
+.imagen img {
     width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    background:rgba(0, 118, 192, 0.781) ;
+    background: rgba(0, 118, 192, 0.781);
     width: 100%;
     height: 0;
     overflow: hidden;
     transition: .5s ease;
 }
 
-.overlay h2{
+.overlay h2 {
     color: #fff;
     font-weight: 300;
-    font-size:30px;
+    font-size: 30px;
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
 }
 
-.imagen:hover .overlay{
-    height:100%;
+.imagen:hover .overlay {
+    height: 100%;
     cursor: pointer;
-}
-
-@media screen and (max-width:1000px){
-    .contenedor-imagenes{
-        width: 95%;
-    }
-}
-
-@media screen and (max-width:700px){
-    .contenedor-imagenes{
-        width: 90%;
-    }
-    .contenedor-imagenes .imagen{
-        width: 48%;
-    }
-}
-
-@media screen and (max-width:450px){
-    h1{
-        font-size:22px;
-    }
-    .contenedor-imagenes{
-        width: 98%;
-    }
-    .contenedor-imagenes .imagen{
-        width: 80%;
-    }
 }
 footer {
     width: 100%;
@@ -790,7 +811,7 @@ footer {
     width: 180px;
 }
 
-.box__footer .terms {
+.box__footer .tema {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -836,6 +857,37 @@ footer {
     background-color: #7a7a7a;
 }
 
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .contenedor-imagenes {
+        width: 98%;
+    }
+
+    .contenedor-imagenes .imagen {
+        width: 80%;
+    }
+}
+
+
 
 @media all and (max-width: 800px) {
     .section {
@@ -861,4 +913,475 @@ footer {
         flex-direction: column;
     }
 }
+
 /*Aqui termina estilos de la pagina proyectos*/
+/*comienza estilo de publicaciones*/
+
+body#publicaciones {
+    background-color: #158847;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+        font-family: 'Open Sans', sans-serif;
+      }
+
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 10 50px;
+    margin: 50px;
+}
+
+.header {
+
+    background: url(../css/images/BBVA-innovacion-construcción-sostenible-apertura.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.menu {
+
+    display: flex;
+    background: gray;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid rgba 255, 255, 255, .5;
+    text-align: center;
+
+
+
+}
+
+.logo {
+    flex: 1 1 auto;
+    font-size: 40px;
+}
+
+.logo p a {
+    color: rgb(20, 21, 20);
+    font-size: 30px;
+    float: none;
+}
+
+.logo a:hover {
+    color: black;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: rgb(236, 226, 226);
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.social {
+
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    font-size: 18px;
+    color: rgb(236, 226, 226);
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: black;
+}
+
+.texto-principal {
+    /*background: crimson;*/
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+/* .h1{
+                                               
+font-size: 15px;
+color:rgb(236, 226, 226);
+text-align:center;
+font-weight: 300;
+line-height:1.6;
+}*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.publicaciones {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.publicaciones h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea {
+    border-top: 5px solid #4d555a;
+    margin-bottom: 40px;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:gray;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .tema {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color:black;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color:black;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+
+/*comienza estilos de contacto*/
+* {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 10 50px;
+    margin: 50px;
+}
+
+.header {
+
+    background: url(../css/images/BBVA-innovacion-construcción-sostenible-apertura.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.menu {
+
+    display: flex;
+    background: gray;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid rgba 255, 255, 255, .5;
+    text-align: center;
+
+
+
+}
+
+.logo {
+    flex: 1 1 auto;
+    font-size: 40px;
+}
+
+.logo p a {
+    color: rgb(20, 21, 20);
+    font-size: 30px;
+    float: none;
+}
+
+.logo a:hover {
+    color: black;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: rgb(236, 226, 226);
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.social {
+
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    font-size: 18px;
+    color: rgb(236, 226, 226);
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: black;
+}
+
+.texto-principal {
+    /*background: crimson;*/
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+/* .h1{
+                                               
+font-size: 15px;
+color:rgb(236, 226, 226);
+text-align:center;
+font-weight: 300;
+line-height:1.6;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contacto {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contacto h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea {
+    border-top: 5px solid #4d555a;
+    margin-bottom: 40px;
+}
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .tema {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #f2e6e6;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #f0e9e9;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #f6eeee;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
