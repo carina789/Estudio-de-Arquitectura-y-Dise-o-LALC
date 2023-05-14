@@ -4,11 +4,7 @@ footer {
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
 
-    /*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
+    
 }
 
 .container__footer {
