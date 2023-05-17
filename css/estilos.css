@@ -737,7 +737,10 @@ input::placeholder,textarea::placeholder{
 
 
     
-
+.ubicacion{
+    justify-content: center;
+    text-align: center;
+}
 
 
 
