@@ -394,7 +394,7 @@ h4{
     margin: auto;
     }
     
-    .card2{
+.card2{
     max-width: 40%;
     height: auto;
     margin: 20px;
@@ -419,7 +419,6 @@ h4{
     display: inline-block;
     margin: auto; 
  }
-  
  .video{
     text-align:center;
   }  
@@ -647,31 +646,108 @@ nav ul li {
     display: flex;
     align-items: center;
 }
+
+
+
 .contacto {
     font-family: 'Open Sans', sans-serif;
 }
 
-.contacto h1 {
+ articles   {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+  
+
+.h1 {
     text-align: center;
     margin: 20px 0 15px 0;
-    font-weight: 300;
+    font-weight: 300 px;
 }
 
 .linea {
     border-top: 5px solid #4d555a;
     margin-bottom: 40px;
 }
+
+.input_group{
+    
+    min-height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   
+    
+}
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(80, 73, 73);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+label{
+    color: #1a0202;
+    font-size: 15px;
+    font: weight 600px;
+    margin-bottom: 15px; 
+
+}
+input,textarea  {
+    padding: 17px 25px;
+    border-radius:20px; 
+    margin-bottom: 20px;
+    background-color: #c6e2ef;
+    border:2 px solid #c6e2ef;
+    color: #000;
+    outline:none ;
+
+}  
+input::placeholder,textarea::placeholder{
+    color: #634848;
+}
+
+.for-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-txt a{
+    color: #1a1717;
+    font-size: 14px;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.submit{
+    font-size: 18px;
+    color: #f0e9e9;
+    border: 0;
+    border-radius: 28px;
+    background-color: cadetblue;
+    box-shadow: #4d555a;
+}
+
+
+    
+
+
+
+
+
 footer {
     width: 100%;
     padding: 50px 0px;
-    background-image: url(../Images/background-footer.svg);
     background-size: cover;
 
-    /*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
+    
 }
 
 .container__footer {

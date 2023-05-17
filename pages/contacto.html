@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
     <title>contactos</title>
 </head>
 
 <body>
-   
+
     <div class="padre">
         <header class="header">
             <id header></id>
@@ -48,99 +49,115 @@
             <div class="texto-principal">
             </div>
         </header>
+
         <br><br><br>
-        
-        <articles>
+        <main>
 
-            <div class="Contacto">
-                <h1>Formulario de Contacto </h1>
-                <div class="linea"></div>
-                <br>
-                <form>
-                    <p>
-                        <label for="">Apellido:</label>
-                        <input type="text"placefolder=>
-                    </p>
-                    <br>
-                    <p>
-                        <label for="">Nombre:</label>
-                        <input type="text"placefolder>
-                    </p>
-                    <br>
-                    <p>
-                        <label for="">email:</label>
-                        <input type="text"placefolder>
-                    </p>
-                    <br>
-                    <p>
-                        <label for="">Teléfono:</label>
-                        <input type="number">
-                    </p>
-                    <br>
-                    <p>
-                        <label for="">Comentarios:</label>
-                        <br>
-                        <br>
-                    </p>
-                        <textarea name="name id " id="" cols="30" rows="10"></textarea>
-                    <p>
-                       <input type="checkbox">
-                       <label for="Términos">Acepto términos y condiciones</label>
-                    </p>
-                    <br>
-                    <p>
-                        <button onclick="alert (Gracias por contactarnos!)">Enviar</button>
-                    </p>
-                </form>
-                
-        
-            </div>
-        </articles>
-        
-        <footer>
 
-            <div class="container__footer">
-                <div class="box__footer">
 
-                    <div class="logo">
 
-                        <p><a href="../home.html">LALC</a></p>
+            <articles>
+
+                <form action="" method="GET">
+
+
+
+                    <div class="Contacto">
+                        <h1>Formulario de Contacto </h1>
+                        <div class="linea"></div>
+
                     </div>
 
 
-                    <div class="tema">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit
-                            libero officiis Delectus architecto officia
-                            praesentium atque laudantium, nam deleniti sapiente deserunt sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit
-                            libero officiis Delectus architecto officia</p>
+                    <div class="input_group">
+
+                        <form>
+
+                            <label for="">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" required placeholder="">
+
+                            <br>
+
+                            <label for="">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" required placeholder="">
+
+                            <br>
+
+                            <label for="">email:</label>
+                            <input type="email" name="email" id="email" required placeholder="">
+
+
+                            <br>
+                            <label for="">Teléfono:</label>
+                            <input type="number" name="telefono" id="telefono" required placeholder="">
+
+                            <br>
+
+                            <label for="">Comentarios:</label>
+
+
+                            <textarea name="name id " id="" cols="30" rows="10"></textarea>
+
+                            <div class="form-txt">
+
+                                <a href="#">politica de privacidad</a>
+                                <br>
+                                <a href="#">terminos y condiciones</a>
+                            </div>
+                            <br>
+                           
+                           <input class="submit" type="submit" value="enviar">
+
+                        </form>
                     </div>
+    </div>
+    </articles>
+    </main>
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+
+                <div class="logo">
+
+                    <p><a href="../home.html">LALC</a></p>
                 </div>
 
 
-                <div class="box__footer">
-                    <h2>Sitio</h2>
-                    <a href="../pages/proyectos.html">proyectos</a>
-                    <a href="../pages/nosotros.html">nosotros</a>
-                    <a href="../home.html">home</a>
-                    <a href="../pages/publicaciones.html">publicaciones</a>
+                <div class="tema">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit
+                        libero officiis Delectus architecto officia
+                        praesentium atque laudantium, nam deleniti sapiente deserunt sit amet consectetur adipisicing
+                        elit.
+                        Voluptas impedit cum cumque velit
+                        libero officiis Delectus architecto officia.</p>
                 </div>
-
-                <div class="box__footer">
-                    <h2>Redes Sociales</h2>
-                    <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                    <a href="#"><i class="fa fa-telegram"></i>Telegram</a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
-                </div>
-
+            </div>
+            <div class="box__footer">
+                <h2>Sitio</h2>
+                <a href="../home.html">home</a>
+                <a href="../pages/proyectos.html">proyectos</a>
+                <a href="../pages/contacto.html">contacto</a>
+                <a href="../pages/publicaciones.html">publicaciones</a>
             </div>
 
-            <div class="box__copyright">
-                <hr>
-                <p>Todos los derechos reservados © 2023 <b>Grupo 9</b></p>
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fa fa-telegram"></i>Telegram</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
             </div>
-        </footer>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>Grupo 9</b></p>
+        </div>
+    </footer>
+    
 
 </body>
 
