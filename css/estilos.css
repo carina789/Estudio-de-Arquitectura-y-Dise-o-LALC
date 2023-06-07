@@ -122,18 +122,85 @@ h6 {
         height: auto;
     }
 }
+/* responsive pantallas grandes */
+@media (min-width: 768px) {
+    /* Ajusta el ancho del logo en el encabezado */
+    .logo {
+        width: 200px;
+    }
+    
+    /* Ajusta el espaciado del menú de navegación */
+    .nav {
+        margin-left: 50px;
+    }
 
-@media all and (max-width: 600px) {
-    .articulos {
-        flex-direction: column;
+    /* Ajusta el tamaño de las imágenes de los artículos */
+    .article img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajusta el tamaño del texto en los artículos */
+    .article h3 {
+        font-size: 18px;
     }
 }
 
-@media all and (max-width: 400px) {
-    .aside {
-        flex-direction: column;
+/* responsive para pantallas medianas */
+@media (max-width: 767px) {
+    /* Ajusta el espaciado en el encabezado */
+    .menu {
+        padding: 10px;
+    }
+
+    /* Ajusta el tamaño del logo en el encabezado */
+    .logo {
+        width: 150px;
+    }
+
+    /* Ajusta el espaciado del menú de navegación */
+    .nav {
+        display: none;
+    }
+
+    /* Muestra el menú de navegación cuando se hace clic en el ícono */
+    .fa-bars {
+        display: inline-block;
+    }
+
+    .fa-bars,
+    .fa-times {
+        cursor: pointer;
+    }
+
+    /* Muestra el menú de navegación cuando se hace clic en el ícono */
+    .fa-bars {
+        display: none;
+    }
+
+    .nav.active {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta el tamaño de las imágenes de los artículos */
+    .article img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajusta el tamaño del texto en los artículos */
+    .article h3 {
+        font-size: 16px;
+    }
+
+    /* Ajusta el tamaño de las publicidades en la barra lateral */
+    .aside img {
+        width: 100%;
+        height: auto;
     }
 }
+
 
 /*termina estilos de HOME*/
 
@@ -190,8 +257,74 @@ h4{
     background:hsl(13, 5%, 68%);
 
 }
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .logo {
+        width: 200px;
+    }
 
-@media all and (max-width: 800px) {
+    .nav {
+        margin-left: 50px;
+    }
+
+    .article img {
+        width: 100%;
+        height: auto;
+    }
+
+    .article h3 {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 767px) {
+    .menu {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: inline-block;
+    }
+
+    .fa-bars,
+    .fa-times {
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .nav.active {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .article img {
+        width: 100%;
+        height: auto;
+    }
+
+    .article h3 {
+        font-size: 16px;
+    }
+
+    .aside img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*@media all and (max-width: 800px) {
     .section {
         flex-direction: column;
     }
@@ -817,3 +950,48 @@ footer {
     height: 1px;
     background-color: #7a7a7a;
 }
+
+/* Estilos adicionales para hacer la página responsive */
+@media only screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        text-align: center;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    /* Estilos para el formulario */
+    .input_group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para el footer */
+    .container__footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box__footer {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
