@@ -54,9 +54,5 @@ else alert ("form invalid")
 // Ejecutar la función de carga 
 window.onload = loadAPI;
 
-   
-
-
-
 
 
