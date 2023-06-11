@@ -1,4 +1,4 @@
-let formularioPCIAS = document.getElementById('formulario');
+let formulario = document.getElementById('formulario');
 let submit = document.getElementById('submit');
 
 let fetchProvincias = (provincia) => {
@@ -14,11 +14,10 @@ formulario.addEventListener('submit', async function (e) {
     e.preventDefault(); //evita que se recargue la página
 
     let provincia = document.getElementById('provincia').value;
-    let resultado = document.getElementById('resultado');
-
+    let resultado1 = document.getElementById('resultado1');
     if (!provincia) {
-        resultado.innerHTML = "Provincia inexistente";
-        
+        resultado1.innerHTML = "Debe ingresar una provincia";
+        return;
     }
 
     submit.setAttribute('disabled', '');
@@ -30,7 +29,7 @@ formulario.addEventListener('submit', async function (e) {
 
 
     if (infoProvincia) {
-        resultado.innerHTML = `Provincia seleccionada: ${nombreProvincia} y su id es: ${idProvincia}`;
+        resultado1.innerHTML = `Provincia: ${nombreProvincia} y la Zona asignada es : ${idProvincia}`;
     }
 
     submit.removeAttribute('disabled');
