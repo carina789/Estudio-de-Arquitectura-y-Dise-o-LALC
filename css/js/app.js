@@ -1,46 +1,3 @@
-const form= document.getElementById("form")
-const button=document.getElementById("submit")
-
-const number=document.getElementById("telefono")
-
-
-
-const formisvalied={
-    
-      apellido:false,
-      name:false,
-      email:false,
-      telefono:false,
-   
-}
-
-
-apellido.addEventListener("change",(e)=>{
- if(e.target.value.trim().length>0 )formisvalied.apellido=true
-})
-
-
-nombre.addEventListener("change",(e)=>{
-    if(e.target.value.trim().length>0 )formisvalied.name=true
-})
-
-email.addEventListener("change",(e)=>{
-    if(e.target.value.trim().length>0 )formisvalied.email=true
-})
-
-telefono.addEventListener("change",(e)=>{
-    if(e.target.value.trim().length>0 )formisvalied.telefono=true
-})
-
-
-const validateform=()=>{
-
-const formvalues=Object.values(formvalues)
-const valid=formvalues.findindex(vlue=>value==false)
-if(valid== -1)form. submit()
-else alert ("form invalid")
-}
-
 let formularioPCIAS = document.getElementById('formulario');
 let submit = document.getElementById('submit');
 
@@ -71,9 +28,12 @@ formulario.addEventListener('submit', async function (e) {
     let nombreProvincia = infoProvincia.provincias[0].nombre;
     let idProvincia = infoProvincia.provincias[0].id;
 
-   
 
+    if (infoProvincia) {
+        resultado.innerHTML = `Provincia seleccionada: ${nombreProvincia} y su id es: ${idProvincia}`;
+    }
 
+    submit.removeAttribute('disabled');
+    submit.removeAttribute('aria-busy');
 
-
-
+});
