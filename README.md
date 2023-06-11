@@ -4,4 +4,6 @@ Integrantes - Carina Pereira / Lucila Veliz / Lidia Dabbraccio / Andrea Balduzzi
 API - provincias en Contactos
 Your site is live at https://carina789.github.io/grupo_09_ArquitecturaDise-o/
 
-Responsive - Home Publicaciones Proyectos Nosotros
+/ RESPONSIVE - Proyectos  Publicaciones  Home    Nosotros
+
+// ANIMACION - en Home LALC ARQUITECTURA SUSTENTABLE CAMBIA DE COLOR
