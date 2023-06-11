@@ -2,13 +2,36 @@
 
 /*Estilos de home*/
 
-
-
-
-.title{
+.padre {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    padding: 10 0px; /*  ElMargen interior  de la izquierda y derecha */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+.title {
     text-align: center;
 }
+.banner {
+    width: 100%;
+    max-height: 120px;
+}
+.animacion-titulo {
+    animation-name: desvanecer-color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes desvanecer-color {
+    0% {
+        color: black;
+    }
+    50% {
+        color: rgb(6, 166, 6);
+    }
+    100% {
+        color: black;
+    }
+}
 .section {
     background: #afaaaa;
     display: flex;
@@ -19,9 +42,7 @@
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
-
 }
-
 .article {
     flex: 1 1 40%;
     color: rgb(235, 222, 222);
@@ -30,9 +51,7 @@
     margin: 10px 10px 0 0px;
     flex: 1 1 45%;
     background: #e4ddbbcc;
-}
-
-.article img {
+}.article img {
     width: 100%;
 }
 
@@ -44,27 +63,21 @@
     margin: 10 0;
     display: inline-block;
 }
-
 .article a:hover {
     background: rgb(71, 195, 195);
 
-}
-
-
-h3 {
+}h3 {
     color: beige;
     font-size: 13;
     padding: 10px 0;
     margin-top: -80px;
 }
-
 h2 {
     font-size: 25px;
     text-transform: uppercase;
     padding: 0px 0 10px 0;
     color: beige;
 }
-
 p {
     color: #000;
     font-family: 'Open Sans', sans-serif;
@@ -122,48 +135,48 @@ h6 {
         height: auto;
     }
 }
-/* responsive pantallas grandes */
+/*pantallas grandes */
 @media (min-width: 768px) {
-    /* Ajusta el ancho del logo en el encabezado */
+    /* logo en el encabezado */
     .logo {
         width: 200px;
     }
     
-    /* Ajusta el espaciado del menú de navegación */
+    /* menú de navegación */
     .nav {
         margin-left: 50px;
     }
 
-    /* Ajusta el tamaño de las imágenes de los artículos */
+    /* imágenes de los artículos */
     .article img {
         width: 100%;
         height: auto;
     }
 
-    /* Ajusta el tamaño del texto en los artículos */
+    /*texto en los artículos */
     .article h3 {
         font-size: 18px;
     }
 }
 
-/* responsive para pantallas medianas */
+/* pantallas medianas */
 @media (max-width: 767px) {
-    /* Ajusta el espaciado en el encabezado */
+    /* espaciado en el encabezado */
     .menu {
         padding: 10px;
     }
 
-    /* Ajusta el tamaño del logo en el encabezado */
+    /*  logo en el encabezado */
     .logo {
         width: 150px;
     }
 
-    /* Ajusta el espaciado del menú de navegación */
+    /* menú de navegación */
     .nav {
         display: none;
     }
 
-    /* Muestra el menú de navegación cuando se hace clic en el ícono */
+    /*  menú de navegación cuando se hace clic en el ícono */
     .fa-bars {
         display: inline-block;
     }
@@ -173,7 +186,7 @@ h6 {
         cursor: pointer;
     }
 
-    /* Muestra el menú de navegación cuando se hace clic en el ícono */
+    /* clic en el ícono */
     .fa-bars {
         display: none;
     }
@@ -183,183 +196,79 @@ h6 {
         margin-bottom: 10px;
     }
 
-    /* Ajusta el tamaño de las imágenes de los artículos */
+    /* imágenes de los artículos */
     .article img {
         width: 100%;
         height: auto;
     }
 
-    /* Ajusta el tamaño del texto en los artículos */
+    /*  texto en los artículos */
     .article h3 {
         font-size: 16px;
     }
 
-    /* Ajusta el tamaño de las publicidades en la barra lateral */
+    /* publicidades en la barra lateral */
     .aside img {
         width: 100%;
         height: auto;
     }
 }
-
-
 /*termina estilos de HOME*/
 
 /*A PARTIR DE AQUI COMIENZA ESTILOS DE LA PAGINA "NOSOTROS"*/
-
-
-
-
 .nosotros {
-    font-family:'Open Sans', sans-serif;
+   max-width: 1200px; /* Ancho máximo del contenido */
+   margin: 0 auto; /* Centrar horizontalmente el contenido */
+   padding: 10 0px;
+   font-family:'Open Sans', sans-serif;
 }
-
 .contenidos h1 {
     text-align: center;
     margin: 20px 0 15px 0;
     font-weight: 300;
 }
-
- .linea {
+.linea {
     border-top: 5px solid #4d555a;
     margin-bottom: 40px;
 }
 .caja{
     display: flex;
     background:hsl(13, 5%, 68%);
-
 }
 
+.caja > div img,
+.caja2 img,
+.caja3 > div img {
+  max-width: 100%;
+  height: auto;
+}
 .caja> div {
-    
     width: 50%;
     padding: 10px;
-
 }
 .caja2{
     padding: 10px;
 }
-
 h4{
     text-align: center;
 }
-
 .caja3{
     display: flex;
 }
-
 .caja3 >div{
     width: 50%;
     padding: 10px;
-
 }
 .caja3{
     display: flex;
     background:hsl(13, 5%, 68%);
-
-}
-/* Estilos para pantallas grandes */
-@media (min-width: 768px) {
-    .logo {
-        width: 200px;
-    }
-
-    .nav {
-        margin-left: 50px;
-    }
-
-    .article img {
-        width: 100%;
-        height: auto;
-    }
-
-    .article h3 {
-        font-size: 18px;
-    }
 }
 
-/* Estilos para pantallas medianas */
-@media (max-width: 767px) {
-    .menu {
-        padding: 10px;
-    }
 
-    .logo {
-        width: 150px;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .fa-bars {
-        display: inline-block;
-    }
-
-    .fa-bars,
-    .fa-times {
-        cursor: pointer;
-    }
-
-    .fa-bars {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .article img {
-        width: 100%;
-        height: auto;
-    }
-
-    .article h3 {
-        font-size: 16px;
-    }
-
-    .aside img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/*@media all and (max-width: 800px) {
-    .section {
-        flex-direction: column;
-    }
-
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
-
-
-}
-
-@media all and (max-width: 600px) {
-    .articulos {
-        flex-direction: column;
-    }
-}
-
-@media all and (max-width: 400px) {
-    .aside {
-        flex-direction: column;
-    }
-}
 
 /*aqui termina estilos de la pagina nosotros*/
 
-
-
-
 /*A partir de aqui comienza estilos de la pagina proyectos*/
-
-
-
-
-   
 
 * {
     margin: 0;
@@ -432,74 +341,35 @@ h4{
     cursor: pointer;
 }
 
-
+/*responsive de proyectos*/
 @media screen and (max-width:1000px) {
     .contenedor-imagenes {
         width: 95%;
     }
 }
-
 @media screen and (max-width:700px) {
     .contenedor-imagenes {
         width: 90%;
     }
-
     .contenedor-imagenes .imagen {
         width: 48%;
     }
 }
-
 @media screen and (max-width:450px) {
     h1 {
         font-size: 22px;
     }
-
     .contenedor-imagenes {
         width: 98%;
     }
-
     .contenedor-imagenes .imagen {
         width: 80%;
     }
 }
 
-
-
-@media all and (max-width: 800px) {
-    .section {
-        flex-direction: column;
-    }
-
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
-
-
-}
-
-@media all and (max-width: 600px) {
-    .articulos {
-        flex-direction: column;
-    }
-}
-
-@media all and (max-width: 400px) {
-    .aside {
-        flex-direction: column;
-    }
-}
-
 /*Aqui termina estilos de la pagina proyectos*/
+
 /*comienza estilo de publicaciones*/
-
-
-
-
-
-
-
-
 
 .publicaciones {
     font-family: 'Open Sans', sans-serif;
@@ -515,8 +385,6 @@ h4{
     border-top: 5px solid #4d555a;
     margin-bottom: 40px;
 }
-
-
 .card1 {
     
     max-width: 40%;
@@ -563,19 +431,13 @@ h4{
 }
 iframe{ 
     margin: 10px;
-    
-
-
 }
 footer {
     width: 100%;
     padding: 50px 0px;
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
-
-   
 }
-
 .container__footer {
     display: flex;
     flex-wrap: wrap;
@@ -585,17 +447,14 @@ footer {
     margin-top: 100px;
     background-color:gray;
 }
-
 .box__footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
-
 .box__footer .logo img {
     width: 180px;
 }
-
 .box__footer .tema {
     max-width: 350px;
     margin-top: 20px;
@@ -603,13 +462,11 @@ footer {
     color:black;
     font-size: 18px;
 }
-
 .box__footer h2 {
     margin-bottom: 30px;
     color: black;
     font-weight: 700;
 }
-
 .box__footer a {
     margin-top: 10px;
     color:black;
@@ -619,7 +476,6 @@ footer {
 .box__footer a:hover {
     opacity: 0.8;
 }
-
 .box__footer a .fab {
     font-size: 20px;
 }
@@ -641,8 +497,6 @@ footer {
     height: 1px;
     background-color: #7a7a7a;
 }
-
-
 
 @media all and (max-width: 800px) {
     .section {
@@ -670,32 +524,24 @@ footer {
 /*comienza estilos de contacto*/
 
 * {
-
     margin: 0%;
     padding: 0px;
     box-sizing: border-box;
-
-
 }
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
 a {
     text-decoration: none;
 }
-
 .padre {
     display: flex;
     flex-flow: column nowrap;
 }
-
 .margen-interno {
     padding: 10 50px;
     margin: 50px;
 }
-
 .header {
 
     background: url(../css/images/BBVA-innovacion-construcción-sostenible-apertura.jpg);
@@ -704,11 +550,8 @@ a {
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-
 }
-
 .menu {
-
     display: flex;
     background: gray;
     flex-flow: row nowrap;
@@ -716,30 +559,22 @@ a {
     align-items: center;
     border-bottom: 1px solid rgba 255, 255, 255, .5;
     text-align: center;
-
-
-
 }
-
 .logo {
     flex: 1 1 auto;
     font-size: 40px;
 }
-
 .logo p a {
     color: rgb(20, 21, 20);
     font-size: 30px;
     float: none;
 }
-
 .logo a:hover {
     color: black;
 }
-
 .nav {
     flex: 5 1 auto;
 }
-
 .nav a {
     color: rgb(236, 226, 226);
     font-size: 11px;
@@ -748,90 +583,65 @@ a {
     letter-spacing: 2px;
     float: left;
 }
-
-nav ul li {
+.nav ul li {
     display: inline;
 }
-
 .nav a:hover {
     color: black;
 }
-
 .social {
-
     flex: 1 1 auto;
     display: flex;
 }
-
 .social a {
     font-size: 18px;
     color: rgb(236, 226, 226);
     padding: 0 5px;
 }
-
 .social a:hover {
     color: black;
 }
-
 .texto-principal {
- 
     height: 580px;
     display: flex;
     align-items: center;
 }
-
-
-
+.title{
+    color: #000;
+}
 .contacto {
     font-family: 'Open Sans', sans-serif;
 }
 
- articles   {
+.articles   {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
- }
-
-  
-
-.h1 {
-    text-align: center;
-    margin: 20px 0 15px 0;
-    font-weight: 300 px;
 }
-
 .linea {
     border-top: 5px solid #4d555a;
     margin-bottom: 40px;
 }
-
 .input_group{
-    
     min-height: 10vh;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-   
-    
 }
 form{
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgb(80, 73, 73);
+    box-shadow: 0 0 20px rgb(9, 0, 0);
     border-radius: 20px;
     text-align: center;
     width: 340px;
 }
-
 label{
-    color: #1a0202;
+    color: #060000;
     font-size: 15px;
     font: weight 600px;
     margin-bottom: 15px; 
-
 }
 input,textarea  {
     padding: 17px 25px;
@@ -841,12 +651,11 @@ input,textarea  {
     border:2 px solid #c6e2ef;
     color: #000;
     outline:none ;
-
 }  
+
 input::placeholder,textarea::placeholder{
     color: #634848;
 }
-
 .for-txt{
     margin-bottom: 30px;
     display: flex;
@@ -854,38 +663,28 @@ input::placeholder,textarea::placeholder{
     text-align: center;
 }
 .form-txt a{
-    color: #1a1717;
+    color: #090000;
     font-size: 14px;
     font-weight: 600px;
     text-decoration: none;
 }
 .submit{
     font-size: 18px;
-    color: #f0e9e9;
+    color: #090707;
     border: 0;
     border-radius: 28px;
     background-color: cadetblue;
     box-shadow: #4d555a;
 }
-
-
-    
 .ubicacion{
     justify-content: center;
     text-align: center;
 }
-
-
-
-
 footer {
     width: 100%;
     padding: 50px 0px;
     background-size: cover;
-
-    
 }
-
 .container__footer {
     display: flex;
     flex-wrap: wrap;
@@ -894,7 +693,6 @@ footer {
     margin: auto;
     margin-top: 100px;
 }
-
 .box__footer {
     display: flex;
     flex-direction: column;
@@ -951,38 +749,51 @@ footer {
     background-color: #7a7a7a;
 }
 
-/* Estilos adicionales para hacer la página responsive */
+/*  responsive */
 @media only screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
         align-items: center;
     }
-
     .logo {
         margin-bottom: 20px;
     }
-
     .nav {
         text-align: center;
     }
-
     .social {
         margin-top: 20px;
     }
 
-    /* Estilos para el formulario */
+    /* formulario */
     .input_group {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     textarea {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        .container {
+            padding: 0;
+        }
+        .title {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+        }
+    }
     /* Estilos para el footer */
     .container__footer {
         flex-direction: column;
@@ -994,4 +805,3 @@ footer {
         text-align: center;
     }
 }
-
