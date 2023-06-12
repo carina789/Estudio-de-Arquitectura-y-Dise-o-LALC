@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
-   
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 
     <title>contactos</title>
@@ -51,65 +51,61 @@
             </div>
         </header>
 
-        
+
         <br>
         <br>
         <br>
-    <main class="container">
-        <form id="formulario">
+        <main class="container">
+            <form id="formulario">
+                <div class="contacto">
+                    <div class="titulo">
+                    <h1>Formulario de contacto</h1>
+                </div>
+                    <div class="linea"></div>
 
-            <div class="Contacto">
-                <h1>Formulario de Contacto </h1>
-                <div class="linea"></div>
+                    <label for="">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required placeholder="">
+                    <label for="">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="">
+                    <br>
 
-            <label for="">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" required placeholder="">
+                    <label for="">email:</label>
+                    <input type="email" name="email" id="email" required placeholder="">
 
-            <label for="">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" required placeholder="">
+                    <br>
 
-                            <br>
+                    <label for="">Teléfono:</label>
+                    <input type="number" name="telefono" id="telefono" required placeholder="">
+                    <br>
+                    <br>
+                    <label>Busqueda por provincia:</label>
+                    <input type="text" name="provincia" id="provincia" placeholder="Ingrese la provincia">
+                    <small>Por ejemplo: Buenos Aires</small>
 
-                            <label for="">email:</label>
-                            <input type="email" name="email" id="email" required placeholder="">
+                    <button type="submit" id="submit" aria-busy="false">Buscar</button>
 
+                    <div id="resultado1"></div>
+                    <button type="submit" id="submit1" onclick="muestraalerta" aria-busy="false">Enviar</button>
+                </div>
+            </form>
+        </main>
 
-                            <br>
-                            <label for="">Teléfono:</label>
-                            <input type="number" name="telefono" id="telefono" required placeholder="">
-
-                            <br>
-            <br>
-            <label>Busqueda por provincia:</label>
-
-            <input type="text" name="provincia" id="provincia" placeholder="Ingrese la provincia">
-            <small>Por ejemplo: Buenos Aires</small>
-
-            <button type="submit" id="submit" aria-busy="false">Buscar</button>
-
-        </form>
+        <script src="../css/js/app.js"></script>
+        <script src="../css/js/funciones.js"></script>
+        <script src="../css/js/script.js"></script>
 
 
-        <div id="resultado1"></div>
+        <div class="container__map">
 
-        <button type="submit" id="submit1" onclick = muestraalerta aria-busy="false">Enviar</button>
-        
-
-    </div>
-
-    <script src="../css/js/app.js"></script>
-    <script src="../css/js/funciones.js"></script>
-    <script src="../css/js/script.js"></script>
-    
-
-    <div class="container__map">
-  
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23416.775889267647!2d-58.448608149299616!
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23416.775889267647!2d-58.448608149299616!
                  3d-34.56481094251754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c63665e40f%3A0x22ba9cb3bebf6ead!2sArribe%C3%B1os%201232%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1684337254465!5m2!1ses-419!2sar"
-                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                </body>
-    </div>
+</body>
+</div>
+
 <footer>
 
     <div class="container__footer">
@@ -154,7 +150,7 @@
         <p>Todos los derechos reservados © 2023 <b>Grupo 9</b></p>
     </div>
 </footer>
-
-<script src="../css/js/scrip.js"></script> 
+</body>
+<script src="../css/js/scrip.js"></script>
 
 </html>

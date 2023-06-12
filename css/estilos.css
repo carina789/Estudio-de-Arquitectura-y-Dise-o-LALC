@@ -606,69 +606,79 @@ a {
     display: flex;
     align-items: center;
 }
-.title{
-    color: #000;
-}
 .contacto {
     font-family: 'Open Sans', sans-serif;
 }
 
-.articles   {
+.articles {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.titulo h1 {
+    color: black;
+}
+ 
 .linea {
     border-top: 5px solid #4d555a;
     margin-bottom: 40px;
 }
-.input_group{
+
+.input_group {
     min-height: 10vh;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-form{
+
+form {
     padding: 50px 55px;
     box-shadow: 0 0 20px rgb(9, 0, 0);
     border-radius: 20px;
     text-align: center;
     width: 340px;
 }
-label{
+
+label {
     color: #060000;
     font-size: 15px;
-    font: weight 600px;
-    margin-bottom: 15px; 
+    font-weight: 600;
+    margin-bottom: 15px;
 }
-input,textarea  {
+
+input,
+textarea {
     padding: 17px 25px;
-    border-radius:20px; 
+    border-radius: 20px;
     margin-bottom: 20px;
     background-color: #c6e2ef;
-    border:2 px solid #c6e2ef;
-    color: #000;
-    outline:none ;
-}  
+    border: 2px solid #c6e2ef;
+    outline: none;
+}
 
-input::placeholder,textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     color: #634848;
 }
-.for-txt{
+
+.for-txt {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.form-txt a{
+
+.form-txt a {
     color: #090000;
     font-size: 14px;
-    font-weight: 600px;
+    font-weight: 600;
     text-decoration: none;
 }
-.submit{
+
+.submit {
     font-size: 18px;
     color: #090707;
     border: 0;
@@ -676,7 +686,8 @@ input::placeholder,textarea::placeholder{
     background-color: cadetblue;
     box-shadow: #4d555a;
 }
-.ubicacion{
+
+.ubicacion {
     justify-content: center;
     text-align: center;
 }
@@ -775,7 +786,12 @@ footer {
         width: 100%;
     }
 }
-
+@media screen and (max-width: 600px) {
+    /* Estilos para pantallas de hasta 600px de ancho */
+    form {
+        width: 100%;
+        padding: 20px;
+    }
 @media only screen and (max-width: 768px) {
     @media screen and (max-width: 768px) {
         .container {
