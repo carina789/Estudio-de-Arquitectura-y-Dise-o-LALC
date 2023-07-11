@@ -65,6 +65,7 @@ a {
     color: black;
 }
 
+
 .nav {
     flex: 5 1 auto;
 }
@@ -103,8 +104,9 @@ nav ul li {
 }
 
 .texto-principal {
- 
+
     height: 580px;
     display: flex;
     align-items: center;
 }
+
